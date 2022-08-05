@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
 import time
 
-# %% 
+# %% 蝦皮會更換class name
 browser = webdriver.Chrome(executable_path="./chrome_driver/chromedriver.exe")
 browser.get(f"https://shopee.tw/search?keyword=apple%20iphone%2013%20128g")
 browser.maximize_window() # 要把畫面放到最大 才能load到資料
