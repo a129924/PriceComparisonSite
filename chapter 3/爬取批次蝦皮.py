@@ -33,13 +33,15 @@ browser.quit()
 # %%
 products = []
 t = ''
-for d in links[:2]:
-    link = f"https://shopee.tw/{d}"
+browser = webdriver.Chrome(executable_path="./chrome_driver/chromedriver.exe")
+
+for d in links[:5]:
+    link = f"https://shopee.tw{d}"
     browser.get(link)
     
     WebDriverWait(browser, 10).until(
         EC.visibility_of_element_located(
-            (By.CLASS_NAME, "attM6y")
+            (By.CLASS_NAME, "VCNVHn")
         )
     )
     

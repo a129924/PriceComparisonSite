@@ -40,7 +40,7 @@ products
 # %%
 page = 5
 keyword = "iPhone 13 128G"
-links:list[str]= []
+links:list = []
 momo_base_url = "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?"
 
 for page in range(1,page+1):
